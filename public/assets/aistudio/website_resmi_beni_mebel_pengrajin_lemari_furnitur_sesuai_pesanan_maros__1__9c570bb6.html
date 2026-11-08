@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beni Mebel — Jasa Lemari dan Kabinet Custom di Maros</title>
+<meta content="Beni Mebel melayani desain dan pemasangan lemari pakaian custom, kabinet custom, serta perakitan furnitur di Maros, Sulawesi Selatan." name="description"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif']
+          },
+          colors: {
+            'cream-bg': '#f7f5f0',
+            'stone-card': '#dad9d4',
+            'stone-beige': '#d8cec4',
+            'charcoal': '#141414',
+            'off-white': '#fafafa'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Typography styles -->
+<style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+    
+    .tracking-widest-plus {
+      letter-spacing: 0.25em;
+    }
+  </style>
+<!-- Layout custom styles -->
+<style data-purpose="layout-adjustments">
+    .minimal-input {
+      border: none;
+      border-bottom: 1px solid #d1d5db;
+      background: transparent;
+      padding: 0.5rem 0;
+      border-radius: 0;
+      width: 100%;
+    }
+    .minimal-input:focus {
+      outline: none;
+      box-shadow: none;
+      border-bottom: 1px solid #111827;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-black selection:text-white">
+<!-- BEGIN: Section 01 - Hero & Navbar -->
+<section class="bg-[#0a0a0a] text-white min-h-screen flex flex-col justify-between p-6 sm:p-10 md:p-14 lg:p-20 relative" data-purpose="hero-section" id="hero">
+<!-- Top Navigation Bar -->
+<header class="flex justify-between items-center w-full relative z-30">
+<a class="flex items-center space-x-3.5 group" href="#hero">
+<img alt="Logo Resmi Beni Mebel" class="w-10 h-10 rounded-full object-contain bg-white/5 border border-neutral-700 group-hover:border-neutral-400 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAYJlZTay_bqjWVrecfgaOEtm_v8KxefMKyKC2YO6ciDz-Wdaq6F8LUdn2C-gilaQ_YsWjlAR6UsDAE3fiTmNmMNVkWprp0lEZszYBtz6s4e-V4n5_DwcoOSnJScGhEqy2U_Jy2aV3jMQRaB14Q0Sn07cqDN1k23-GDm8CkHNN5dUG2pIlum-F3qa1SjBVvP-nwnppgnsO4M6ZyiqpCcxVyni4qCDKZHvIkF0i35w"/>
+<div class="text-xl sm:text-2xl font-light tracking-wide font-sans text-white">
+          Beni Mebel
+        </div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden md:flex space-x-7 lg:space-x-9 text-xs font-medium tracking-widest text-neutral-300">
+<a class="hover:text-white transition-colors duration-200" href="#hero">BERANDA</a>
+<a class="hover:text-white transition-colors duration-200" href="#portofolio">PORTOFOLIO</a>
+<a class="hover:text-white transition-colors duration-200" href="#layanan">LAYANAN</a>
+<a class="hover:text-white transition-colors duration-200" href="#tentang">TENTANG KAMI</a>
+<a class="hover:text-white transition-colors duration-200" href="#proses">PROSES</a>
+<a class="hover:text-white transition-colors duration-200" href="#kontak">KONTAK</a>
+</nav>
+<!-- Mobile Hamburger Button -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-neutral-300 hover:text-white focus:outline-none" id="mobile-menu-btn">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+</svg>
+</button>
+<!-- Mobile Dropdown Nav Menu -->
+<div class="hidden absolute top-full right-0 mt-3 w-56 bg-[#161616] border border-neutral-800 rounded-xl shadow-2xl py-4 px-5 flex-col space-y-4 text-xs font-medium tracking-wider md:hidden z-50" id="mobile-menu">
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#hero">BERANDA</a>
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#portofolio">PORTOFOLIO</a>
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#layanan">LAYANAN</a>
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#tentang">TENTANG KAMI</a>
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#proses">PROSES</a>
+<a class="nav-link text-neutral-300 hover:text-white transition block" href="#kontak">KONTAK</a>
+</div>
+</header>
+<!-- Main Hero Headline and CTA -->
+<div class="my-auto py-16 sm:py-24 max-w-4xl z-10">
+<span class="inline-block text-[11px] sm:text-xs font-mono uppercase tracking-[0.25em] text-neutral-400 mb-6">
+        PENGRAJIN LEMARI &amp; FURNITUR SESUAI PESANAN
+      </span>
+<h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem] font-normal leading-[1.1] tracking-tight mb-8">
+        Lemari &amp; Kabinet Custom, Dirancang untuk Ruang Anda.
+      </h1>
+<p class="text-neutral-300 text-base md:text-lg max-w-xl font-light leading-relaxed mb-10">
+        Beni Mebel melayani desain dan pemasangan lemari pakaian serta kabinet custom sesuai kebutuhan ruang dan keinginan Anda.
+      </p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="bg-white text-black font-medium text-sm px-7 py-3.5 rounded-full hover:bg-neutral-200 transition inline-flex items-center space-x-2" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+<span>Konsultasi via WhatsApp</span>
+<span>→</span>
+</a>
+<a class="border border-neutral-600 text-neutral-200 font-medium text-sm px-7 py-3.5 rounded-full hover:border-white transition" href="#portofolio">
+          Lihat Hasil Pekerjaan
+        </a>
+</div>
+</div>
+<!-- Bottom Architectural Focus Bar -->
+<div class="pt-10 border-t border-neutral-800 grid grid-cols-1 md:grid-cols-12 gap-8 items-end text-neutral-300 text-sm z-10">
+<div class="md:col-span-5 text-neutral-400 font-light leading-relaxed pr-6">
+        Solusi furnitur untuk memenuhi kebutuhan penyimpanan dan fungsi ruang Anda.
+      </div>
+<div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+<div class="border-l border-neutral-800 pl-4 sm:pl-0 sm:border-l-0">
+<div class="text-base font-normal text-white">Lemari Pakaian Khusus</div>
+</div>
+<div class="border-l border-neutral-800 pl-4 sm:pl-0 sm:border-l-0">
+<div class="text-base font-normal text-white">Kabinet Sesuai Kebutuhan</div>
+</div>
+<div class="border-l border-neutral-800 pl-4 sm:pl-0 sm:border-l-0">
+<div class="text-base font-normal text-white">Perakitan Furnitur</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section 01 - Hero & Navbar -->
+<!-- BEGIN: Section 02 - Portofolio Pekerjaan -->
+<section class="bg-[#f7f5f0] py-24 px-6 md:px-12 flex flex-col items-center border-b border-gray-200/60 relative" data-purpose="moodboard-gallery" id="portofolio">
+<!-- Top Title / Indicator -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-[11px] tracking-[0.25em] uppercase font-mono text-gray-500 block mb-2" id="portfolio-batch-label">
+        PORTOFOLIO BENI MEBEL — BATCH 01
+      </span>
+<h2 class="text-3xl md:text-4xl font-light text-gray-900 tracking-tight mb-3">
+        Dokumentasi Hasil Pekerjaan
+      </h2>
+<p class="text-gray-600 text-sm font-light leading-relaxed">
+        Jelajahi dokumentasi pekerjaan Beni Mebel melalui berbagai hasil pengerjaan lemari dan furnitur.
+      </p>
+</div>
+<!-- Carousel Wrapper with Navigation Arrows -->
+<div class="relative w-full max-w-5xl flex items-center justify-center">
+<!-- Prev Arrow -->
+<button aria-label="Previous batch" class="hidden md:flex absolute -left-12 lg:-left-16 z-20 w-11 h-11 rounded-full border border-gray-200 bg-white/95 shadow-sm hover:border-black hover:bg-black hover:text-white transition duration-200 items-center justify-center text-gray-700 text-sm" id="carousel-prev">
+        ←
+      </button>
+<!-- Carousel Container -->
+<div class="w-full overflow-hidden select-none" id="carousel-container">
+<div class="flex transition-transform duration-700 ease-in-out" id="carousel-track">
+<!-- BATCH / SLIDE 1 (Foto 01 - 06) -->
+<div class="w-full flex-shrink-0 px-2 sm:px-6">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 sm:gap-x-10 lg:gap-x-12 gap-y-10 max-w-4xl mx-auto">
+<!-- 01 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 01" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAppWv704TTlsosktCr16PhVwESFB7SxtpIABpel0i38XR6FAITMvzXB_GfiA3YtCOJmNeHczAX7VXUji8P2JDxF-rVBSxLyHq2IuMs_VMTJ8iQLaQPIrGTsiywUmWf1PAtUtOta2103bIU7bsV3oDAl3fVICEajV0iHoZ4Nd-gyb8xAQjn---o1Jdhq5RztR420YkiSImDjhnrutDccC2892D8DpBNuVAgNJuHpG4"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">01</span>
+</div>
+<!-- 02 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 02" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMub5GYABwaTcT-PzjyY4snqr4un-_a03rEFWNZlJfNIDH2wgP9AcmQCAScZquMBHgRYslpuooxDv2j-Ir6u4GNFzvRp07RLJwpQ7kiTiZ-1K0A1cNTzsEhy0YaD250zAFYNxW0971AFOy9ZmnE58mmxafQK_WEF_Q2yhg3vrbfbwC-QDB55Ft75gXIZMj_v4rIFbHNTIyGHtqQwQZklWpDt0Ks5aqU-T9mAMTGeM"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">02</span>
+</div>
+<!-- 03 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 03" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIELyI4jLG2E9UH6PwfIYRmCxqmDKHzh8z3EzXR3Mr7atb2alIC0YF0PeuteD8NCYyEP3VGrSvNmDD1PqE2KkhrSM76-CC2YEyqHt6_CoL3-Ztg3Wm2d6BQjr8gPE0-EoMS-c55_6rqLCglunBKp1gk0VFFE6ev8GNHQxjxDmgdY2EeN2TGh_Ng4916ZI9KZxTmFEME2ogA_fJbrh2GjmatSGyJT-WvRWjIgURnZM"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">03</span>
+</div>
+<!-- 04 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 04" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDifKPQrMOzx57fWoLJejXrXYXcBlDW1lvRnEOl99CXgxRgFJZ5y4Lr6xFj28Jt7Kv75evIubjzwBXq4iROyYmVYa3cnsMQf411gPkHQfdfV5__7GhTY-09YrWanSfAIxQI_ruGWc7NeqNotDwcqYO5UAfJ8kTcwa5mMijKroqK5AEOOmEVUhBEpDlNz9nraBQaVZYYH25hQZ1ctq-Jg2da-x_p87jIQ1pMA-JmSTA"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">04</span>
+</div>
+<!-- 05 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 05" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5DaW-nDr99sAVsg4yDxUMMLmxVCfNW3EcfZHjB_kDgJsGBDgip1dG5FI-wCzECFzxDq3pGs2cKBDMGxp1dCZAJ3mV7LEYmTGVKR0FGbVI7M8JOJZwcdpdVbMEpZUqhirUl3mHK_8hW_dcigpV9RMM9YaxPX3JROMCJ3FF1V0PFfNDBPF7Mofm9hOTYtTXuHr9wl0QBm1mTy7NnZYnEVTSJnoQ-kCAz_45HncdTSk"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">05</span>
+</div>
+<!-- 06 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 06" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9eMIXIScFfLEKJnZfQKJH0Y8TQXTlHmaj8ayOtRZrXpwWxb6HuW_R8SN50hYiM3W6olhSjd70ZQaWkPmCpqxEIF05KrX0hYKey_AOjtTjJKwvfgDqU0D84thKlLwFiep2wkvCs3BtAQX5ZlkMAGDHrOtXJ0CIvZLnoXiLSOCP_RfzeFzAtSt-bD2CUde7GGhTpwnggHFlr_Et5WbwOLCOGgIV1zLFEn62qkStZME"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">06</span>
+</div>
+</div>
+</div>
+<!-- BATCH / SLIDE 2 (Foto 07 - 10) -->
+<div class="w-full flex-shrink-0 px-2 sm:px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 sm:gap-x-8 gap-y-10 max-w-4xl mx-auto items-start">
+<!-- 07 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 07" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjZtCTl_cwn2FBq1v8Cr1TPkP8TA7vwPCDKSqeeBuMc6L3twzqRExTUpWUIQaIlbC-lDwzhP1iQNiNB7_Y9GUU2XEOcakhkGXqpbDJsQdNzHxvEOd-_7q1fUHejk5qV--PDdDx63amC_UsUqDxXwzABlGe67hKLPkypc13w6nCXdIdzl8LYYejRrF6RSPBnB-zfqtfD1pCN1Gozf1ofrHtvARVX4IYjYUrSWb_h1g"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">07</span>
+</div>
+<!-- 08 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 08" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQeJbK6lc4XtVLxg49gUFrU8ipzxsAWaF7SmPt2i7ZWNmUJB4QxkvMGsNSIy36fMBfpJWCazCzJSSnJhjP8_AZdCm82AmsIFxXlsxwgLJ94LhGajzEcZTUH2bOwqMsJzYU2sSP_pI0odYZqcEPo_EBrVq8NrplQ4yHbS-GMA-zRmrl72ObKzo9CCvrljIOPTr4FAxHvknbM2Tt1wgO8fXeB9oDUUPSPvbVYG54wU4"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">08</span>
+</div>
+<!-- 09 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 09" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Z8N2Kdv1-UwNj55ofQYE-g6tO-738ldVhSSpQyVLaVOor3QNs5Y_xEB48zSvt7FGybFWuGBb9Pqf6G8mzS3uAfNfkrvvAyWgCqm-92WBiC2A8h5OcGoR3WKKWqcE-fGPmPZ6Dj6qB9XZFGD0JMFML2mvulaEBBu45jopr9OeIuhI87mvLTCVCoKAi24tlHApl2vzjFCwFotECZODVQ9bWh7I_lgBccF3oTaEWu0"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">09</span>
+</div>
+<!-- 10 Item -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-neutral-200 overflow-hidden mb-3 shadow-sm rounded-sm">
+<img alt="Dokumentasi pekerjaan Beni Mebel nomor 10" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzV2oHcf7_Ojk4Kpz4kj6QbMNtRj_-7grINfjtfXakRHy-VGWDgkipl9R5d2r4RSd7iDVEhjgphSjU_dNau1GRHFptQF4f9uQiBI9aXJi5bHVjt2zhUoazNkpOGrOG7FBPsOzUKqhUBauGm0_EHZ_n5DjFAhmjTyQdKQLNrl0d-KIuYw0kduWLEKa_Hl23rb7ddMJA2rBGDSAA0uCLDYc4egBMi1Dhtl1UBIRGrvE"/>
+</div>
+<span class="text-[11px] font-mono text-gray-500">10</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next Arrow -->
+<button aria-label="Next batch" class="hidden md:flex absolute -right-12 lg:-right-16 z-20 w-11 h-11 rounded-full border border-gray-200 bg-white/95 shadow-sm hover:border-black hover:bg-black hover:text-white transition duration-200 items-center justify-center text-gray-700 text-sm" id="carousel-next">
+        →
+      </button>
+</div>
+<!-- Mobile Arrow Controls & Dot Indicators -->
+<div class="flex items-center justify-center space-x-6 mt-10">
+<button aria-label="Previous batch" class="md:hidden w-9 h-9 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-700 text-xs" id="carousel-prev-mobile">
+        ←
+      </button>
+<div class="flex items-center space-x-2.5" id="carousel-dots">
+<button aria-label="Slide 1" class="dot-btn w-6 h-2.5 rounded-full bg-black transition-all" data-index="0"></button>
+<button aria-label="Slide 2" class="dot-btn w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-500 transition-all" data-index="1"></button>
+</div>
+<button aria-label="Next batch" class="md:hidden w-9 h-9 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-700 text-xs" id="carousel-next-mobile">
+        →
+      </button>
+</div>
+<!-- Bottom Brand Identity Reference -->
+<div class="text-[10px] tracking-[0.3em] uppercase font-mono text-gray-500 mt-14 text-center">
+      BENI MEBEL • DOKUMENTASI HASIL PENGERJAAN
+    </div>
+</section>
+<!-- END: Section 02 - Portofolio Pekerjaan -->
+<!-- BEGIN: Section 03 - Layanan Kami -->
+<section class="bg-[#f7f5f0] py-24 px-8 md:px-16 border-b border-gray-200" data-purpose="services-section" id="layanan">
+<div class="max-w-7xl mx-auto">
+<!-- Upper Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-20">
+<div class="lg:col-span-7">
+<span class="text-[11px] font-mono tracking-[0.25em] uppercase text-gray-500 block mb-4">
+            LAYANAN BENI MEBEL
+          </span>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 tracking-tight leading-[1.12]">
+            Solusi Furnitur Custom<br/>
+            untuk Kebutuhan<br/>
+            Ruang Anda.
+          </h2>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between items-start lg:items-end h-full pt-2">
+<p class="text-gray-700 text-base md:text-lg max-w-sm mb-6 lg:text-right font-light">
+            Dari desain hingga pemasangan, Beni Mebel membantu menghadirkan lemari dan kabinet yang disesuaikan dengan kebutuhan Anda.
+          </p>
+<a class="inline-flex items-center space-x-3 bg-white border border-gray-300 rounded-full px-5 py-2.5 text-xs font-medium tracking-wide hover:bg-black hover:text-white transition group" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20layanan%20furnitur." rel="noopener noreferrer" target="_blank">
+<span>Konsultasikan Kebutuhan Anda</span>
+<span class="w-4 h-4 rounded-full bg-black text-white group-hover:bg-white group-hover:text-black inline-flex items-center justify-center text-[10px] transition">→</span>
+</a>
+</div>
+</div>
+<!-- Breadcrumb and Minimal Status Pill -->
+<div class="flex justify-between items-center border-t border-gray-300 pt-4 pb-12 text-xs font-mono text-gray-500">
+<div>/LAYANAN-KAMI</div>
+<div class="bg-black text-white px-3 py-1 rounded-full text-[10px] tracking-widest flex items-center space-x-2">
+<span>LAYANAN FURNITUR KHUSUS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+</div>
+</div>
+<!-- 3 Columns Balanced Service Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+<!-- Service 001: Lemari Pakaian Custom -->
+<div class="py-6 md:py-0 md:px-8 flex flex-col justify-between min-h-[340px]">
+<div>
+<span class="text-xs font-mono text-gray-400">001</span>
+<!-- Minimal Wardrobe Line Icon -->
+<div class="h-28 flex items-center my-6 text-gray-800">
+<svg class="w-16 h-16 stroke-current" fill="none" stroke-width="1.5" viewbox="0 0 64 64">
+<rect height="46" rx="2" width="38" x="13" y="9"></rect>
+<line x1="32" x2="32" y1="9" y2="55"></line>
+<line stroke-linecap="round" stroke-width="2" x1="27" x2="27" y1="28" y2="34"></line>
+<line stroke-linecap="round" stroke-width="2" x1="37" x2="37" y1="28" y2="34"></line>
+<line x1="13" x2="51" y1="42" y2="42"></line>
+<line x1="19" x2="19" y1="55" y2="59"></line>
+<line x1="45" x2="45" y1="55" y2="59"></line>
+</svg>
+</div>
+<h3 class="text-xl font-normal text-gray-900 mb-3">Lemari Pakaian Custom</h3>
+</div>
+<p class="text-sm text-gray-600 font-light leading-relaxed">
+            Desain dan pemasangan lemari pakaian sesuai kebutuhan penyimpanan dan ruang Anda.
+          </p>
+</div>
+<!-- Service 002: Kabinet Custom -->
+<div class="py-6 md:py-0 md:px-8 flex flex-col justify-between min-h-[340px]">
+<div>
+<span class="text-xs font-mono text-gray-400">002</span>
+<!-- Minimal Cabinet Line Icon -->
+<div class="h-28 flex items-center my-6 text-gray-800">
+<svg class="w-16 h-16 stroke-current" fill="none" stroke-width="1.5" viewbox="0 0 64 64">
+<rect height="32" rx="2" width="46" x="9" y="16"></rect>
+<line x1="24" x2="24" y1="16" y2="48"></line>
+<line x1="40" x2="40" y1="16" y2="48"></line>
+<circle cx="16.5" cy="32" fill="currentColor" r="1.5"></circle>
+<circle cx="32" cy="32" fill="currentColor" r="1.5"></circle>
+<circle cx="47.5" cy="32" fill="currentColor" r="1.5"></circle>
+<line x1="15" x2="15" y1="48" y2="54"></line>
+<line x1="49" x2="49" y1="48" y2="54"></line>
+</svg>
+</div>
+<h3 class="text-xl font-normal text-gray-900 mb-3">Kabinet Custom</h3>
+</div>
+<p class="text-sm text-gray-600 font-light leading-relaxed">
+            Desain dan pemasangan kabinet sesuai kebutuhan dan fungsi ruang.
+          </p>
+</div>
+<!-- Service 003: Perakitan Furnitur -->
+<div class="py-6 md:py-0 md:px-8 flex flex-col justify-between min-h-[340px]">
+<div>
+<span class="text-xs font-mono text-gray-400">003</span>
+<!-- Minimal Precision Assembly Line Icon -->
+<div class="h-28 flex items-center my-6 text-gray-800">
+<svg class="w-16 h-16 stroke-current" fill="none" stroke-width="1.5" viewbox="0 0 64 64">
+<path d="M18 16 L32 30 L26 36 L12 22 Z" stroke-linejoin="round"></path>
+<path d="M46 16 L32 30 L38 36 L52 22 Z" stroke-linejoin="round"></path>
+<line stroke-linecap="round" x1="32" x2="32" y1="36" y2="52"></line>
+<circle cx="32" cy="54" fill="white" r="3"></circle>
+<circle cx="15" cy="19" fill="white" r="2.5"></circle>
+<circle cx="49" cy="19" fill="white" r="2.5"></circle>
+</svg>
+</div>
+<h3 class="text-xl font-normal text-gray-900 mb-3">Perakitan Furnitur</h3>
+</div>
+<p class="text-sm text-gray-600 font-light leading-relaxed">
+            Layanan perakitan furnitur untuk memenuhi kebutuhan pelanggan.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section 03 - Layanan Kami -->
+<!-- BEGIN: Section 04 - Tentang Beni Mebel -->
+<section class="bg-[#f7f5f0] py-28 px-8 md:px-16 border-b border-gray-200/60" data-purpose="about-us-section" id="tentang">
+<div class="max-w-6xl mx-auto flex flex-col items-center">
+<!-- Section Title with Vertical Accent Line -->
+<div class="w-px h-16 bg-gray-400 mb-8"></div>
+<h2 class="text-3xl md:text-4xl font-light tracking-wide text-gray-900 uppercase">
+        TENTANG KAMI
+      </h2>
+<p class="text-xs font-serif italic text-gray-500 mt-2 mb-20 tracking-wider">
+        Mengenal Beni Mebel
+      </p>
+<!-- Asymmetrical Factual Card Grid -->
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-end mb-24">
+<!-- Card 1: Lemari Pakaian -->
+<div class="bg-[#dcdbd7] p-8 flex flex-col justify-between h-[340px]">
+<div>
+<span class="text-xs font-mono uppercase text-gray-500 block mb-2">01 / PRODUK</span>
+<div class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight leading-snug">
+              LEMARI PAKAIAN
+            </div>
+</div>
+<div>
+<div class="w-full h-px bg-gray-400 mb-3"></div>
+<div class="text-[11px] tracking-wider uppercase font-medium text-gray-700">LEMARI PAKAIAN KHUSUS</div>
+</div>
+</div>
+<!-- Card 2: Kabinet -->
+<div class="bg-[#e4dcce] p-8 flex flex-col justify-between h-[230px]">
+<div>
+<span class="text-xs font-mono uppercase text-gray-500 block mb-2">02 / PRODUK</span>
+<div class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight">
+              KABINET
+            </div>
+</div>
+<div>
+<div class="w-full h-px bg-gray-400 mb-3"></div>
+<div class="text-[11px] tracking-wider uppercase font-medium text-gray-700">KABINET KHUSUS</div>
+</div>
+</div>
+<!-- Card 3: Furnitur -->
+<div class="bg-[#dcdbd7] p-8 flex flex-col justify-between h-[340px]">
+<div>
+<span class="text-xs font-mono uppercase text-gray-500 block mb-2">03 / LAYANAN</span>
+<div class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight leading-snug">
+              FURNITUR
+            </div>
+</div>
+<div>
+<div class="w-full h-px bg-gray-400 mb-3"></div>
+<div class="text-[11px] tracking-wider uppercase font-medium text-gray-700">PERAKITAN FURNITUR</div>
+</div>
+</div>
+<!-- Card 4: Lokasi -->
+<div class="bg-[#cccbc6] p-8 flex flex-col justify-between h-[210px]">
+<div>
+<span class="text-xs font-mono uppercase text-gray-500 block mb-2">04 / WILAYAH</span>
+<div class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight">
+              LOKASI
+            </div>
+</div>
+<div>
+<div class="w-full h-px bg-gray-400 mb-3"></div>
+<div class="text-[11px] tracking-wider uppercase font-medium text-gray-700">MAROS, SULAWESI SELATAN</div>
+</div>
+</div>
+</div>
+<!-- Bottom Detailed Copy Columns -->
+<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-12 text-sm text-gray-700 font-serif leading-relaxed">
+<div>
+<p class="mb-4">
+            Beni Mebel merupakan usaha pengrajin lemari yang melayani desain dan pemasangan lemari pakaian serta kabinet custom. Kami juga menyediakan layanan perakitan furnitur untuk membantu memenuhi kebutuhan furnitur pelanggan.
+          </p>
+<a class="inline-block text-xs font-sans font-semibold tracking-widest uppercase text-gray-900 hover:text-gray-600 transition" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+            KONSULTASI VIA WHATSAPP &gt;
+          </a>
+</div>
+<div>
+<p>
+            Setiap kebutuhan ruang memiliki karakter dan fungsi yang berbeda. Karena itu, Beni Mebel melayani pembuatan dan pemasangan furnitur sesuai kebutuhan pelanggan.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section 04 - Tentang Beni Mebel -->
+<!-- BEGIN: Section 05 - Alur Konsultasi dan Pengerjaan -->
+<section class="bg-[#f7f5f0] py-28 px-8 md:px-16 border-b border-gray-200" data-purpose="process-infographic" id="proses">
+<div class="max-w-6xl mx-auto">
+<!-- Section Title -->
+<div class="border-l-2 border-black pl-4 mb-16">
+<h2 class="text-3xl md:text-4xl font-normal text-gray-900">Bagaimana Proses Pemesanan?</h2>
+<p class="text-gray-600 text-sm font-light mt-1">Mulai dari menyampaikan kebutuhan hingga furnitur siap digunakan.</p>
+</div>
+<!-- Desktop Cyclical flow diagram layout -->
+<div class="hidden md:flex relative w-full max-w-4xl mx-auto min-h-[500px] items-center justify-center">
+<!-- SVG Connecting Circular Path -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" viewbox="0 0 700 480">
+<circle cx="340" cy="240" r="160" stroke="#c0c0c0" stroke-dasharray="4 4" stroke-width="2"></circle>
+<path d="M 340 80 A 160 160 0 0 1 500 240" stroke="#737373" stroke-width="2"></path>
+<path d="M 500 240 A 160 160 0 0 1 340 400" stroke="#737373" stroke-width="2"></path>
+<path d="M 340 400 A 160 160 0 0 1 180 240" stroke="#737373" stroke-width="2"></path>
+</svg>
+<!-- Positioned nodes & content -->
+<div class="relative w-full h-[480px]">
+<!-- Node 01: Top Left (Konsultasikan Kebutuhan) -->
+<div class="absolute top-8 left-6 lg:left-14 max-w-xs flex items-center space-x-4 text-right">
+<div>
+<span class="text-[11px] font-mono text-gray-400 block">TAHAP 01</span>
+<h4 class="font-semibold text-gray-900 text-sm">Konsultasikan Kebutuhan</h4>
+<p class="text-xs text-gray-600 leading-tight mt-1">Ceritakan kebutuhan lemari, kabinet, atau furnitur yang ingin Anda buat.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center shadow font-mono text-xs">
+              01
+            </div>
+</div>
+<!-- Node 02: Bottom Left (Diskusikan Desain) -->
+<div class="absolute bottom-16 left-6 lg:left-12 max-w-xs flex items-center space-x-4 text-right">
+<div>
+<span class="text-[11px] font-mono text-gray-400 block">TAHAP 02</span>
+<h4 class="font-semibold text-gray-900 text-sm">Diskusikan Desain</h4>
+<p class="text-xs text-gray-600 leading-tight mt-1">Diskusikan model, ukuran, dan kebutuhan ruang agar desain sesuai dengan keinginan Anda.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center shadow font-mono text-xs">
+              02
+            </div>
+</div>
+<!-- Node 03: Bottom Right (Tentukan Detail Pekerjaan) -->
+<div class="absolute bottom-10 right-6 lg:right-12 max-w-xs flex items-center space-x-4 text-left">
+<div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center shadow font-mono text-xs">
+              03
+            </div>
+<div>
+<span class="text-[11px] font-mono text-gray-400 block">TAHAP 03</span>
+<h4 class="font-semibold text-gray-900 text-sm">Tentukan Detail Pekerjaan</h4>
+<p class="text-xs text-gray-600 leading-tight mt-1">Bahas detail kebutuhan furnitur sebelum proses pengerjaan dilakukan.</p>
+</div>
+</div>
+<!-- Highlight Large Circle: Top Right (Pengerjaan dan Pemasangan) -->
+<div class="absolute top-4 right-8 lg:right-24 w-64 lg:w-72 h-64 lg:h-72 rounded-full bg-gray-200/90 p-8 flex flex-col justify-center items-center text-center shadow-inner">
+<span class="text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1">TAHAP 04</span>
+<div class="text-sm font-semibold text-gray-900 mb-2">Pengerjaan &amp; Pemasangan</div>
+<p class="text-[11px] text-gray-700 leading-relaxed font-light">
+              Furnitur dikerjakan sesuai kebutuhan yang telah disepakati, termasuk proses pemasangan sesuai layanan secara teliti dan rapi.
+            </p>
+</div>
+</div>
+</div>
+<!-- Mobile Vertical Clean Flow -->
+<div class="md:hidden space-y-4 mt-6">
+<div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex items-start space-x-4">
+<div class="w-9 h-9 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center text-xs font-mono font-bold">01</div>
+<div>
+<h4 class="font-semibold text-gray-900 text-sm">Konsultasikan Kebutuhan</h4>
+<p class="text-xs text-gray-600 leading-relaxed mt-1">Ceritakan kebutuhan lemari, kabinet, atau furnitur yang ingin Anda buat.</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex items-start space-x-4">
+<div class="w-9 h-9 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center text-xs font-mono font-bold">02</div>
+<div>
+<h4 class="font-semibold text-gray-900 text-sm">Diskusikan Desain</h4>
+<p class="text-xs text-gray-600 leading-relaxed mt-1">Diskusikan model, ukuran, dan kebutuhan ruang agar desain sesuai dengan keinginan Anda.</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex items-start space-x-4">
+<div class="w-9 h-9 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center text-xs font-mono font-bold">03</div>
+<div>
+<h4 class="font-semibold text-gray-900 text-sm">Tentukan Detail Pekerjaan</h4>
+<p class="text-xs text-gray-600 leading-relaxed mt-1">Bahas detail kebutuhan furnitur sebelum proses pengerjaan dilakukan.</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex items-start space-x-4">
+<div class="w-9 h-9 rounded-full bg-neutral-800 text-white flex-shrink-0 flex items-center justify-center text-xs font-mono font-bold">04</div>
+<div>
+<h4 class="font-semibold text-gray-900 text-sm">Pengerjaan dan Pemasangan</h4>
+<p class="text-xs text-gray-600 leading-relaxed mt-1">Furnitur dikerjakan sesuai kebutuhan yang telah disepakati, termasuk proses pemasangan sesuai layanan.</p>
+</div>
+</div>
+</div>
+<!-- Slide page badge -->
+<div class="flex justify-end mt-6">
+<span class="w-7 h-7 rounded-full bg-black text-white text-[10px] flex items-center justify-center font-bold">BM</span>
+</div>
+</div>
+</section>
+<!-- END: Section 05 - Alur Konsultasi dan Pengerjaan -->
+<!-- BEGIN: Section 06 - Kontak dan Lokasi -->
+<section class="py-20 px-4 md:px-12 bg-[#f7f5f0] flex justify-center items-center" data-purpose="contact-section" id="kontak">
+<div class="bg-white max-w-5xl w-full shadow-lg border border-gray-200/50 overflow-hidden grid grid-cols-1 md:grid-cols-12">
+<!-- Architectural Image Showcase (Left) with Beni Mebel Badge -->
+<div class="md:col-span-5 relative min-h-[360px] md:min-h-full">
+<img alt="Dokumentasi furnitur Beni Mebel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClK0Aoc09FxBT42kJ0_VGib78p9O1fdaMc0yejvfIcJNrNwKlxvcnpcQJswr-AO8o7j3BpL-Mc-7AMlojsdTj4BALV1sYIs681oT3TMPabNO-FPxkt0XfKxgbwS0EAEBNT_Dkrg9Hc8D2C56_tfvTBu24awlG4edogHxVPUe6i5jN6BALaCRfE2pUM8vvDf5Inc2WUP1RBT0BnEtopv-5vuKshX0xTV3JEVY45t5E"/>
+<!-- Beni Mebel Box Logo Badge -->
+<div class="absolute top-6 left-6 border border-white/80 px-3.5 py-1.5 bg-black/40 backdrop-blur-sm text-[11px] tracking-widest text-white font-sans uppercase font-medium">
+          BENI MEBEL
+        </div>
+</div>
+<!-- Contact Info & Action Details (Right) -->
+<div class="md:col-span-7 p-8 md:p-12 lg:p-14 flex flex-col justify-between bg-white">
+<div>
+<!-- Top Sub-Navigation Links -->
+<nav class="flex space-x-6 text-[11px] text-gray-500 font-sans tracking-wide mb-10 justify-start sm:justify-end">
+<a class="hover:text-black transition" href="#portofolio">Portofolio</a>
+<a class="hover:text-black transition" href="#layanan">Layanan</a>
+<a class="hover:text-black transition" href="#proses">Proses</a>
+<a class="text-black font-semibold border-b border-black pb-0.5" href="#kontak">Hubungi Kami</a>
+</nav>
+<!-- Headline & Context Narration -->
+<div class="mb-10">
+<span class="text-[11px] font-mono tracking-[0.25em] uppercase text-gray-400 block mb-2">HUBUNGI KAMI</span>
+<h2 class="text-3xl md:text-4xl font-serif text-gray-900 mb-4">Diskusikan Kebutuhan Furnitur Anda.</h2>
+<p class="text-xs text-gray-600 font-sans leading-relaxed">
+              Punya rencana membuat lemari pakaian atau kabinet custom? Hubungi Beni Mebel untuk menyampaikan kebutuhan furnitur Anda.
+            </p>
+</div>
+<!-- Contact Details Grid -->
+<div class="space-y-6 pt-4 border-t border-gray-100 text-xs text-gray-700">
+<div>
+<span class="font-semibold text-gray-900 block text-xs uppercase tracking-wider mb-1">WhatsApp</span>
+<a class="text-sm font-medium text-black hover:underline" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+                +62 821-1000-8568
+              </a>
+</div>
+<div>
+<span class="font-semibold text-gray-900 block text-xs uppercase tracking-wider mb-1">Alamat</span>
+<p class="leading-relaxed text-gray-600">
+                Jl. Poros Kariango, Bontoa, Kec. Mandai, Kabupaten Maros, Sulawesi Selatan 90552.
+              </p>
+</div>
+<div>
+<span class="font-semibold text-gray-900 block text-xs uppercase tracking-wider mb-1">Jam Operasional</span>
+<p class="text-gray-600">Informasi buka: 08.00 WITA</p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="pt-10 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center space-x-2 bg-black text-white px-6 py-3 rounded-full text-xs font-medium tracking-wide hover:bg-neutral-800 transition" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+<span>Hubungi via WhatsApp</span>
+<span>→</span>
+</a>
+<a class="inline-flex items-center space-x-2 border border-gray-300 text-gray-800 px-6 py-3 rounded-full text-xs font-medium tracking-wide hover:border-black transition" href="https://maps.app.goo.gl/hVsdRMyiGxaunxtE6?g_st=aw" rel="noopener noreferrer" target="_blank">
+<span>Lihat Lokasi di Google Maps</span>
+<span class="text-[11px]">↗</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section 06 - Kontak dan Lokasi -->
+<!-- BEGIN: Section 07 - Main Footer -->
+<footer class="bg-[#f7f5f0] text-gray-900 pt-20 pb-12 px-8 md:px-16 border-t border-[#e5e2da]" data-purpose="footer-section">
+<div class="max-w-6xl mx-auto">
+<!-- Headline & Summary -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-12 border-b border-gray-300/80">
+<div class="lg:col-span-7">
+<h2 class="text-3xl md:text-5xl font-light text-gray-900 tracking-tight leading-tight mb-4">
+            Lemari dan kabinet sesuai kebutuhan ruang Anda.
+          </h2>
+<p class="text-sm text-gray-600 font-light max-w-lg leading-relaxed">
+            Pengrajin lemari dan furnitur custom yang melayani desain, pemasangan, dan perakitan furnitur sesuai kebutuhan Anda.
+          </p>
+</div>
+<div class="lg:col-span-5 flex flex-wrap gap-4 lg:justify-end items-center pt-2">
+<a class="inline-flex items-center space-x-2 bg-black text-white px-5 py-2.5 rounded-full text-xs font-medium hover:bg-neutral-800 transition" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+<span>Hubungi WhatsApp</span>
+<span>→</span>
+</a>
+<a class="inline-flex items-center space-x-2 border border-gray-400 bg-white text-gray-900 px-5 py-2.5 rounded-full text-xs font-medium hover:border-black transition" href="https://maps.app.goo.gl/hVsdRMyiGxaunxtE6?g_st=aw" rel="noopener noreferrer" target="_blank">
+<span>Lihat Lokasi</span>
+<span class="text-[11px]">↗</span>
+</a>
+</div>
+</div>
+<!-- Footer Nav & Information Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 text-xs leading-loose border-b border-gray-300/80">
+<!-- Navigasi -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-3 text-sm">Navigasi Halaman</h4>
+<ul class="space-y-1.5 text-gray-600">
+<li><a class="hover:text-black transition" href="#hero">Beranda</a></li>
+<li><a class="hover:text-black transition" href="#portofolio">Portofolio Hasil Kerja</a></li>
+<li><a class="hover:text-black transition" href="#layanan">Layanan Kami</a></li>
+<li><a class="hover:text-black transition" href="#tentang">Tentang Beni Mebel</a></li>
+<li><a class="hover:text-black transition" href="#proses">Proses Pemesanan</a></li>
+<li><a class="hover:text-black transition" href="#kontak">Kontak Kami</a></li>
+</ul>
+</div>
+<!-- Layanan -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-3 text-sm">Layanan Spesialis</h4>
+<ul class="space-y-1.5 text-gray-600">
+<li>Lemari Pakaian Custom (Wardrobe)</li>
+<li>Kabinet Custom (Kitchen &amp; Living)</li>
+<li>Perakitan Furnitur</li>
+</ul>
+</div>
+<!-- Kontak & Operasional -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-3 text-sm">Workshop &amp; Kontak</h4>
+<p class="text-gray-600 mb-2 leading-relaxed">
+            Kabupaten Maros, Sulawesi Selatan.
+          </p>
+<p class="text-gray-600 mb-1">WhatsApp: +62 821-1000-8568</p>
+<p class="text-gray-600">Informasi buka: 08.00 WITA</p>
+</div>
+</div>
+<!-- Legal and Brand Mark Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0 text-xs text-gray-500">
+<div class="flex items-center space-x-3">
+<img alt="Logo Beni Mebel" class="w-6 h-6 rounded-full object-contain bg-white/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtXz8Iju8ER3LNFPeUKUaHzC86xXgkQqBwPN67mDRHcS_taGeCLuQUqXfHqxA4-gaKFJomyZ9KuEipDuVbSP6IfsFk894QMmLBBUZHrMnJlfdTuxc0pSx7PU1yvKXDeShbdo8PMjxRFAG06Lsb05FyVqFnxYCFyia6Lcd34mhVVlwnGiXbhAEaqDGhoIvIbdW9BwGT3Ngd812bUvilNogptn8-f7wLJO5IqM-XK3E"/>
+<span class="text-sm font-semibold text-gray-900">Beni Mebel</span>
+</div>
+<div class="text-[11px] text-gray-500">
+          © Beni Mebel. Seluruh hak cipta dilindungi. Pengrajin Lemari &amp; Kabinet Custom di Maros.
+        </div>
+</div>
+</div>
+</footer>
+<!-- END: Section 07 - Main Footer -->
+<!-- BEGIN: Mobile Floating WhatsApp CTA -->
+<div class="md:hidden fixed bottom-6 right-6 z-50">
+<a aria-label="Konsultasi via WhatsApp" class="flex items-center space-x-2.5 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#20ba59] hover:shadow-xl transition-all duration-200 group text-xs sm:text-sm font-medium" href="https://wa.me/6282110008568?text=Halo%20Beni%20Mebel%2C%20saya%20ingin%20konsultasi%20pembuatan%20lemari%20atau%20kabinet%20custom." rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.488 1.411 2.342.507.452.934.592 1.068.658.134.066.27.058.37-.058.101-.115.433-.505.549-.679.115-.173.231-.144.39-.086s1.011.477 1.184.563c.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.174L2 22l4.982-1.309A9.946 9.946 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+</svg>
+<span>Konsultasi WhatsApp</span>
+</a>
+</div>
+<!-- END: Mobile Floating WhatsApp CTA -->
+<!-- Interactive Scripts -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle & Accessibility
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileDropdown = document.getElementById('mobile-menu');
+      
+      function toggleMobileMenu(forceClose = false) {
+        if (!mobileBtn || !mobileDropdown) return;
+        const isCurrentlyOpen = !mobileDropdown.classList.contains('hidden');
+        if (forceClose || isCurrentlyOpen) {
+          mobileDropdown.classList.add('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileDropdown.classList.remove('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      if (mobileBtn && mobileDropdown) {
+        mobileBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleMobileMenu();
+        });
+        
+        const mobileLinks = mobileDropdown.querySelectorAll('.nav-link');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            toggleMobileMenu(true);
+          });
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            toggleMobileMenu(true);
+          }
+        });
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+          if (!mobileDropdown.contains(e.target) && !mobileBtn.contains(e.target)) {
+            toggleMobileMenu(true);
+          }
+        });
+      }
+
+      // 2. Carousel Functionality (2 Batches)
+      let currentSlide = 0;
+      const totalSlides = 2;
+      const track = document.getElementById('carousel-track');
+      const container = document.getElementById('carousel-container');
+      const label = document.getElementById('portfolio-batch-label');
+      const dots = document.querySelectorAll('.dot-btn');
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      const prevBtnMobile = document.getElementById('carousel-prev-mobile');
+      const nextBtnMobile = document.getElementById('carousel-next-mobile');
+
+      function updateCarousel(index) {
+        currentSlide = (index + totalSlides) % totalSlides;
+        if (track) {
+          track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+        if (label) {
+          label.textContent = `PORTOFOLIO BENI MEBEL — BATCH 0${currentSlide + 1}`;
+        }
+        dots.forEach((dot, i) => {
+          if (i === currentSlide) {
+            dot.classList.remove('bg-gray-300', 'w-2.5');
+            dot.classList.add('bg-black', 'w-6');
+          } else {
+            dot.classList.remove('bg-black', 'w-6');
+            dot.classList.add('bg-gray-300', 'w-2.5');
+          }
+        });
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', () => updateCarousel(currentSlide - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => updateCarousel(currentSlide + 1));
+      if (prevBtnMobile) prevBtnMobile.addEventListener('click', () => updateCarousel(currentSlide - 1));
+      if (nextBtnMobile) nextBtnMobile.addEventListener('click', () => updateCarousel(currentSlide + 1));
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => updateCarousel(idx));
+      });
+
+      // Touch swipe support on mobile
+      if (container) {
+        let startX = 0;
+        let startY = 0;
+        let endX = 0;
+        let endY = 0;
+
+        container.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        container.addEventListener('touchend', (e) => {
+          endX = e.changedTouches[0].clientX;
+          endY = e.changedTouches[0].clientY;
+          const diffX = startX - endX;
+          const diffY = startY - endY;
+
+          // Only trigger if horizontal swipe is significantly stronger than vertical scroll
+          if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY)) {
+            if (diffX > 0) {
+              updateCarousel(currentSlide + 1); // swipe left
+            } else {
+              updateCarousel(currentSlide - 1); // swipe right
+            }
+          }
+        }, { passive: true });
+      }
+
+      updateCarousel(0);
+    });
+  </script>
+</body></html>

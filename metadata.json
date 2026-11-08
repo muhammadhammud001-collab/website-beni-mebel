@@ -1,0 +1,6 @@
+{
+  "name": "Beni Mebel",
+  "description": "Beni Mebel melayani desain dan pemasangan lemari pakaian sesuai pesanan, kabinet, serta perakitan furnitur di Maros, Sulawesi Selatan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -191,10 +191,15 @@
     #portfolio-lightbox {
       transition: opacity 0.25s ease, visibility 0.25s ease;
     }
-    /* Process horizontal rail exact anchor from Step 01 center to Step 04 center (lg: 4 cols, gap-7 = 1.75rem) */
-    .process-rail-track {
-      left: 1.5rem;
-      right: calc(25% - 2.8125rem);
+    /* Process desktop architectural circular nodes */
+    .process-circle-card {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+      will-change: transform;
+    }
+    .process-circle-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(20, 20, 20, 0.52);
+      box-shadow: 0 22px 44px -24px rgba(20, 20, 20, 0.22);
     }
     @media (prefers-reduced-motion: reduce) {
       .scroll-smooth {
@@ -866,7 +871,7 @@
   <!-- END: Section 04 - Tentang Beni Mebel -->
 
   <!-- BEGIN: Section 05 - Alur Konsultasi dan Pengerjaan -->
-  <section class="bg-[#f7f5f0] py-20 sm:py-28 px-6 md:px-10 lg:px-16 border-b border-gray-200 md:scroll-mt-16" data-purpose="process-infographic" id="proses">
+  <section class="bg-[#f7f5f0] py-20 sm:py-28 px-6 md:px-10 xl:px-16 border-b border-gray-200 md:scroll-mt-16" data-purpose="process-infographic" id="proses">
     <div class="max-w-7xl mx-auto">
       <!-- Section Title -->
       <div class="process-header flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14 sm:mb-16 pb-8 border-b border-gray-300/70">
@@ -876,93 +881,107 @@
             Bagaimana Proses Pemesanan?
           </h2>
         </div>
-        <p class="text-gray-600 text-xs sm:text-sm md:text-base font-light max-w-md md:text-right leading-relaxed">
+        <p class="text-gray-600 text-xs sm:text-sm md:text-base font-light max-w-sm md:text-right leading-relaxed [text-wrap:balance]">
           Mulai dari menyampaikan kebutuhan hingga furnitur siap digunakan.
         </p>
       </div>
 
-      <!-- Desktop Precision 4-Step Architectural Process Flow (Zero overlaps at all desktop widths) -->
-      <div class="hidden md:block relative w-full">
-        <!-- Continuous Horizontal Connector Rail (lg+, terminates cleanly at Step 04 center) -->
-        <div class="hidden lg:block absolute top-6 process-rail-track h-px bg-gray-300 z-0" aria-hidden="true">
-          <div class="process-rail-fill h-full bg-gray-900 origin-left"></div>
-        </div>
+      <!-- Desktop Luxury Circular Architectural Flow (Proportional & zero-overlap across md/lg/xl+) -->
+      <div class="hidden md:block relative w-full pt-6 pb-4 lg:py-8">
+        <div class="grid md:grid-cols-2 md:gap-y-12 md:gap-x-8 md:justify-items-center md:items-center lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-0 relative z-10">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 relative z-10 items-stretch">
-          <!-- Step 01 -->
-          <div class="process-node flex flex-col">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center font-mono text-xs tabular-nums shadow-sm ring-4 ring-[#f7f5f0]">
-                01
-              </div>
-              <span class="text-xs font-mono tracking-widest uppercase text-gray-500 lg:hidden">Tahap 01</span>
+          <!-- Step 01 Circle -->
+          <div class="process-node process-circle-card relative aspect-square w-[260px] lg:w-[206px] xl:w-[258px] rounded-full bg-[#fdfcfa] border border-neutral-900/20 flex flex-col items-center justify-center text-center px-7 lg:px-5 xl:px-7 shrink-0">
+            <div class="pointer-events-none absolute inset-2.5 rounded-full border border-neutral-900/[0.07]" aria-hidden="true"></div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#141414] text-white font-mono text-[11px] tabular-nums flex items-center justify-center ring-4 ring-[#f7f5f0] shadow-sm">
+              01
             </div>
-            <div class="bg-white/85 border border-gray-200/90 p-7 rounded-sm flex-1 flex flex-col justify-between">
-              <div>
-                <span class="hidden lg:block text-[11px] font-mono tracking-widest uppercase text-gray-400 mb-2">Tahap 01</span>
-                <h4 class="font-medium text-gray-900 text-lg mb-3 leading-snug">Konsultasikan Kebutuhan</h4>
-                <p class="text-sm text-gray-600 font-light leading-relaxed">
-                  Ceritakan kebutuhan lemari, kabinet, atau furnitur yang ingin Anda buat.
-                </p>
-              </div>
+            <span class="text-[10px] font-mono tracking-[0.18em] uppercase text-neutral-400 mb-2">Tahap 01</span>
+            <h4 class="font-medium text-neutral-900 text-base lg:text-[14px] xl:text-[17px] mb-2 leading-snug">
+              Konsultasikan Kebutuhan
+            </h4>
+            <p class="text-xs lg:text-[11.5px] xl:text-[13px] text-neutral-600 font-light leading-relaxed">
+              Ceritakan kebutuhan lemari, kabinet, atau furnitur yang ingin Anda buat.
+            </p>
+          </div>
+
+          <!-- Connector 01 -> 02 (lg+) -->
+          <div class="process-connector hidden lg:flex flex-1 items-center justify-center px-1 xl:px-2" aria-hidden="true">
+            <div class="w-full flex items-center">
+              <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 shrink-0"></span>
+              <span class="process-connector-line flex-1 h-px bg-neutral-900/25 origin-left"></span>
+              <svg class="w-3 h-3 text-neutral-600 -ml-1 shrink-0" viewBox="0 0 12 12" fill="none">
+                <path d="M3.5 2.25L7.75 6L3.5 9.75" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </div>
 
-          <!-- Step 02 -->
-          <div class="process-node flex flex-col">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center font-mono text-xs tabular-nums shadow-sm ring-4 ring-[#f7f5f0]">
-                02
-              </div>
-              <span class="text-xs font-mono tracking-widest uppercase text-gray-500 lg:hidden">Tahap 02</span>
+          <!-- Step 02 Circle -->
+          <div class="process-node process-circle-card relative aspect-square w-[260px] lg:w-[206px] xl:w-[258px] rounded-full bg-[#fdfcfa] border border-neutral-900/20 flex flex-col items-center justify-center text-center px-7 lg:px-5 xl:px-7 shrink-0">
+            <div class="pointer-events-none absolute inset-2.5 rounded-full border border-neutral-900/[0.07]" aria-hidden="true"></div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#141414] text-white font-mono text-[11px] tabular-nums flex items-center justify-center ring-4 ring-[#f7f5f0] shadow-sm">
+              02
             </div>
-            <div class="bg-white/85 border border-gray-200/90 p-7 rounded-sm flex-1 flex flex-col justify-between">
-              <div>
-                <span class="hidden lg:block text-[11px] font-mono tracking-widest uppercase text-gray-400 mb-2">Tahap 02</span>
-                <h4 class="font-medium text-gray-900 text-lg mb-3 leading-snug">Diskusikan Desain</h4>
-                <p class="text-sm text-gray-600 font-light leading-relaxed">
-                  Diskusikan model, ukuran, dan kebutuhan ruang agar desain sesuai dengan keinginan Anda.
-                </p>
-              </div>
+            <span class="text-[10px] font-mono tracking-[0.18em] uppercase text-neutral-400 mb-2">Tahap 02</span>
+            <h4 class="font-medium text-neutral-900 text-base lg:text-[14px] xl:text-[17px] mb-2 leading-snug">
+              Diskusikan Desain
+            </h4>
+            <p class="text-xs lg:text-[11.5px] xl:text-[13px] text-neutral-600 font-light leading-relaxed">
+              Diskusikan model, ukuran, dan kebutuhan ruang agar desain sesuai dengan keinginan Anda.
+            </p>
+          </div>
+
+          <!-- Connector 02 -> 03 (lg+) -->
+          <div class="process-connector hidden lg:flex flex-1 items-center justify-center px-1 xl:px-2" aria-hidden="true">
+            <div class="w-full flex items-center">
+              <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 shrink-0"></span>
+              <span class="process-connector-line flex-1 h-px bg-neutral-900/25 origin-left"></span>
+              <svg class="w-3 h-3 text-neutral-600 -ml-1 shrink-0" viewBox="0 0 12 12" fill="none">
+                <path d="M3.5 2.25L7.75 6L3.5 9.75" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </div>
 
-          <!-- Step 03 -->
-          <div class="process-node flex flex-col">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 rounded-full bg-black text-white flex-shrink-0 flex items-center justify-center font-mono text-xs tabular-nums shadow-sm ring-4 ring-[#f7f5f0]">
-                03
-              </div>
-              <span class="text-xs font-mono tracking-widest uppercase text-gray-500 lg:hidden">Tahap 03</span>
+          <!-- Step 03 Circle -->
+          <div class="process-node process-circle-card relative aspect-square w-[260px] lg:w-[206px] xl:w-[258px] rounded-full bg-[#fdfcfa] border border-neutral-900/20 flex flex-col items-center justify-center text-center px-7 lg:px-5 xl:px-7 shrink-0">
+            <div class="pointer-events-none absolute inset-2.5 rounded-full border border-neutral-900/[0.07]" aria-hidden="true"></div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#141414] text-white font-mono text-[11px] tabular-nums flex items-center justify-center ring-4 ring-[#f7f5f0] shadow-sm">
+              03
             </div>
-            <div class="bg-white/85 border border-gray-200/90 p-7 rounded-sm flex-1 flex flex-col justify-between">
-              <div>
-                <span class="hidden lg:block text-[11px] font-mono tracking-widest uppercase text-gray-400 mb-2">Tahap 03</span>
-                <h4 class="font-medium text-gray-900 text-lg mb-3 leading-snug">Tentukan Detail Pekerjaan</h4>
-                <p class="text-sm text-gray-600 font-light leading-relaxed">
-                  Bahas detail kebutuhan furnitur sebelum proses pengerjaan dilakukan.
-                </p>
-              </div>
+            <span class="text-[10px] font-mono tracking-[0.18em] uppercase text-neutral-400 mb-2">Tahap 03</span>
+            <h4 class="font-medium text-neutral-900 text-base lg:text-[14px] xl:text-[17px] mb-2 leading-snug">
+              Tentukan Detail Pekerjaan
+            </h4>
+            <p class="text-xs lg:text-[11.5px] xl:text-[13px] text-neutral-600 font-light leading-relaxed">
+              Bahas detail kebutuhan furnitur sebelum proses pengerjaan dilakukan.
+            </p>
+          </div>
+
+          <!-- Connector 03 -> 04 (lg+, extra right inset to clear Step 04 dashed halo ring) -->
+          <div class="process-connector hidden lg:flex flex-1 items-center justify-center pl-1 pr-3 xl:pl-2 xl:pr-4" aria-hidden="true">
+            <div class="w-full flex items-center">
+              <span class="w-1.5 h-1.5 rounded-full bg-neutral-500 shrink-0"></span>
+              <span class="process-connector-line flex-1 h-px bg-neutral-900/35 origin-left"></span>
+              <svg class="w-3 h-3 text-neutral-800 -ml-1 shrink-0" viewBox="0 0 12 12" fill="none">
+                <path d="M3.5 2.25L7.75 6L3.5 9.75" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </div>
 
-          <!-- Step 04 (Culminating Stage Highlight) -->
-          <div class="process-node-large flex flex-col">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 rounded-full bg-gray-900 text-white flex-shrink-0 flex items-center justify-center font-mono text-xs tabular-nums shadow-sm ring-4 ring-[#f7f5f0]">
-                04
-              </div>
-              <span class="text-xs font-mono tracking-widest uppercase text-gray-700 lg:hidden">Tahap 04</span>
+          <!-- Step 04 Culminating Large Circle -->
+          <div class="process-node-large process-circle-card relative aspect-square w-[276px] lg:w-[236px] xl:w-[304px] rounded-full bg-[#e6e0d5] border border-neutral-900/35 flex flex-col items-center justify-center text-center px-8 lg:px-6 xl:px-9 shrink-0">
+            <div class="pointer-events-none absolute -inset-2.5 rounded-full border border-dashed border-neutral-900/20" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute inset-2.5 rounded-full border border-neutral-900/10" aria-hidden="true"></div>
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[#141414] text-white font-mono text-[11px] tabular-nums flex items-center justify-center ring-4 ring-[#f7f5f0] shadow-sm">
+              04
             </div>
-            <div class="bg-[#e6e2d8] border border-gray-300/90 p-7 rounded-sm flex-1 flex flex-col justify-between">
-              <div>
-                <span class="hidden lg:block text-[11px] font-mono tracking-widest uppercase text-gray-600 mb-2">Tahap 04 · Penyelesaian</span>
-                <h4 class="font-medium text-gray-900 text-lg mb-3 leading-snug">Pengerjaan &amp; Pemasangan</h4>
-                <p class="text-sm text-gray-700 font-light leading-relaxed">
-                  Furnitur dikerjakan sesuai kebutuhan yang telah disepakati, termasuk proses pemasangan sesuai layanan.
-                </p>
-              </div>
-            </div>
+            <span class="text-[10px] font-mono tracking-[0.2em] uppercase text-neutral-600 mb-2">Tahap Akhir</span>
+            <h4 class="font-medium text-neutral-900 text-lg lg:text-[15px] xl:text-[19px] mb-2.5 leading-snug">
+              Pengerjaan &amp; Pemasangan
+            </h4>
+            <p class="text-xs lg:text-[12px] xl:text-[13.5px] text-neutral-700 font-light leading-relaxed">
+              Furnitur dikerjakan sesuai kebutuhan yang telah disepakati, termasuk proses pemasangan sesuai layanan.
+            </p>
           </div>
         </div>
       </div>
@@ -1847,7 +1866,7 @@
               '-=0.3'
             );
 
-          // Section 05: Process Reveal (Synchronized rail + cards, zero delay gap)
+          // Section 05: Process Circular Reveal (Synchronized circles + connectors, zero delay gap)
           const processTl = gsap.timeline({
             scrollTrigger: {
               trigger: '#proses',
@@ -1862,15 +1881,20 @@
               { opacity: 1, y: 0, duration: 0.55, ease: 'power2.out' },
               0
             )
-            .fromTo('.process-rail-fill',
-              { scaleX: 0 },
-              { scaleX: 1, duration: 0.85, ease: 'power2.out' },
-              0.15
-            )
             .fromTo('.process-node, .process-node-large',
-              { opacity: 0, y: 24 },
-              { opacity: 1, y: 0, duration: 0.55, stagger: 0.1, ease: 'power3.out' },
+              { opacity: 0, y: 20, scale: 0.94, transition: 'none' },
+              { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out', clearProps: 'transform,opacity,transition' },
               0.12
+            )
+            .fromTo('.process-connector',
+              { opacity: 0 },
+              { opacity: 1, duration: 0.4, stagger: 0.1, ease: 'power2.out' },
+              0.24
+            )
+            .fromTo('.process-connector-line',
+              { scaleX: 0 },
+              { scaleX: 1, duration: 0.5, stagger: 0.1, ease: 'power2.out' },
+              0.24
             );
 
           // Section 06: Contact Section with subtle scrub parallax on image
